@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-05-22",
+  "presets": {
+    "balanced_10p": {
+      "recommendedPlayers": 10,
+      "impostors": 2,
+      "discussionSeconds": 45,
+      "votingSeconds": 90,
+      "roles": {
+        "crew": ["archivist", "warden", "signaler"],
+        "impostor": ["saboteur_plus", "mimic"],
+        "neutral": ["broker"]
+      }
+    },
+    "chaos_12p": {
+      "recommendedPlayers": 12,
+      "impostors": 3,
+      "discussionSeconds": 30,
+      "votingSeconds": 75,
+      "roles": {
+        "crew": ["archivist", "oracle", "warden"],
+        "impostor": ["dissolver", "parasite"],
+        "neutral": ["fugitive"]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-05-22",
+  "global": {
+    "maxCustomCrewRoles": 3,
+    "maxCustomImpostorRoles": 2,
+    "maxCustomNeutralRoles": 1,
+    "allowDuplicateRoles": false
+  },
+  "roles": {
+    "archivist": 1.0,
+    "warden": 1.0,
+    "signaler": 0.9,
+    "oracle": 0.8,
+    "saboteur_plus": 1.0,
+    "mimic": 0.9,
+    "dissolver": 0.8,
+    "parasite": 0.8,
+    "broker": 0.5,
+    "fugitive": 0.5
+  },
+  "exclusions": [
+    ["archivist", "oracle"],
+    ["mimic", "parasite"],
+    ["broker", "fugitive"]
+  ]
+}

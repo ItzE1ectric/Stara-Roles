@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-05-22",
+  "roles": {
+    "archivist": { "cooldownSeconds": 30, "durationSeconds": 8, "charges": 2 },
+    "warden": { "cooldownSeconds": 35, "durationSeconds": 6, "charges": 2 },
+    "signaler": { "cooldownSeconds": 40, "durationSeconds": 0, "charges": 1 },
+    "oracle": { "cooldownSeconds": 0, "durationSeconds": 0, "charges": 1 },
+    "saboteur_plus": { "cooldownSeconds": 30, "durationSeconds": 10, "charges": 2 },
+    "mimic": { "cooldownSeconds": 45, "durationSeconds": 12, "charges": 2 },
+    "dissolver": { "cooldownSeconds": 25, "durationSeconds": 20, "charges": 99 },
+    "parasite": { "cooldownSeconds": 35, "durationSeconds": 7, "charges": 2 },
+    "broker": { "cooldownSeconds": 30, "durationSeconds": 0, "charges": 3 },
+    "fugitive": { "cooldownSeconds": 20, "durationSeconds": 0, "charges": 3 }
+  }
+}

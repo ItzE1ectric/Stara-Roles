@@ -1,0 +1,11 @@
+role_id,display_name,team,group_tag,ability_summary,cooldown_s,duration_s,charges,win_condition,counterplay,icon_file,header_file,enabled
+archivist,Archivist,Crewmate,CrewInvest,"Stores last known room traces from reports",30,8,2,"Crew wins by normal crewmate condition","Fake pathing and fast rotates",Archivist.png,Archivist.png,true
+warden,Warden,Crewmate,CrewProtect,"Creates temporary protection radius around a target",35,6,2,"Crew wins by normal crewmate condition","Bait shield timing and split pressure",Warden.png,Warden.png,true
+signaler,Signaler,Crewmate,CrewSupport,"Delayed panic ping to all crew after threat trigger",40,0,1,"Crew wins by normal crewmate condition","Force early trigger and then isolate",Signaler.png,Signaler.png,true
+oracle,Oracle,Crewmate,CrewInvest,"Makes one high-risk prediction each meeting",0,0,1,"Crew wins by normal crewmate condition","Bluff pressure and vote bait",Oracle.png,Oracle.png,true
+saboteur_plus,Saboteur+,Impostor,ImpConcealing,"Alters one task output once per round",30,10,2,"Impostors win by parity or kills","Cross-check task progress in meetings",SaboteurPlus.png,SaboteurPlus.png,true
+mimic,Mimic,Impostor,ImpConcealing,"Copies a seen role ability after a delay",45,12,2,"Impostors win by parity or kills","Hide role usage patterns from vision",Mimic.png,Mimic.png,true
+dissolver,Dissolver,Impostor,ImpKilling,"Bodies fade in stages after kill",25,20,99,"Impostors win by parity or kills","Fast report discipline and patrol routes",Dissolver.png,Dissolver.png,true
+parasite,Parasite,Impostor,ImpConcealing,"Brief movement influence on target player",35,7,2,"Impostors win by parity or kills","Buddy movement checks",Parasite.png,Parasite.png,true
+broker,Broker,Neutral,NeutralControl,"Completes intel trade objectives to win",30,0,3,"Completes neutral objective chain","Deny meetings or force chaos",Broker.png,Broker.png,true
+fugitive,Fugitive,Neutral,NeutralEscape,"Escapes via timed objective path",20,0,3,"Reaches all escape checkpoints before final meeting","Door control and map denial",Fugitive.png,Fugitive.png,true
