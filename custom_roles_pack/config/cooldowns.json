@@ -1,16 +1,306 @@
-{
-  "schemaVersion": "1.0",
-  "lastUpdated": "2026-05-22",
-  "roles": {
-    "archivist": { "cooldownSeconds": 30, "durationSeconds": 8, "charges": 2 },
-    "warden": { "cooldownSeconds": 35, "durationSeconds": 6, "charges": 2 },
-    "signaler": { "cooldownSeconds": 40, "durationSeconds": 0, "charges": 1 },
-    "oracle": { "cooldownSeconds": 0, "durationSeconds": 0, "charges": 1 },
-    "saboteur_plus": { "cooldownSeconds": 30, "durationSeconds": 10, "charges": 2 },
-    "mimic": { "cooldownSeconds": 45, "durationSeconds": 12, "charges": 2 },
-    "dissolver": { "cooldownSeconds": 25, "durationSeconds": 20, "charges": 99 },
-    "parasite": { "cooldownSeconds": 35, "durationSeconds": 7, "charges": 2 },
-    "broker": { "cooldownSeconds": 30, "durationSeconds": 0, "charges": 3 },
-    "fugitive": { "cooldownSeconds": 20, "durationSeconds": 0, "charges": 3 }
-  }
+﻿{
+    "schemaVersion":  "2.0",
+    "lastUpdated":  "2026-05-22",
+    "roles":  {
+                  "pulse_mapper":  {
+                                       "cooldownSeconds":  30,
+                                       "durationSeconds":  12,
+                                       "charges":  3
+                                   },
+                  "echo_clerk":  {
+                                     "cooldownSeconds":  35,
+                                     "durationSeconds":  8,
+                                     "charges":  2
+                                 },
+                  "route_auditor":  {
+                                        "cooldownSeconds":  40,
+                                        "durationSeconds":  0,
+                                        "charges":  2
+                                    },
+                  "residue_analyst":  {
+                                          "cooldownSeconds":  0,
+                                          "durationSeconds":  0,
+                                          "charges":  99
+                                      },
+                  "static_scout":  {
+                                       "cooldownSeconds":  25,
+                                       "durationSeconds":  0,
+                                       "charges":  99
+                                   },
+                  "vector_witness":  {
+                                         "cooldownSeconds":  45,
+                                         "durationSeconds":  3,
+                                         "charges":  2
+                                     },
+                  "gatewright":  {
+                                     "cooldownSeconds":  35,
+                                     "durationSeconds":  12,
+                                     "charges":  2
+                                 },
+                  "patchrunner":  {
+                                      "cooldownSeconds":  40,
+                                      "durationSeconds":  0,
+                                      "charges":  2
+                                  },
+                  "signal_mason":  {
+                                       "cooldownSeconds":  45,
+                                       "durationSeconds":  8,
+                                       "charges":  2
+                                   },
+                  "coolant_marshal":  {
+                                          "cooldownSeconds":  0,
+                                          "durationSeconds":  10,
+                                          "charges":  1
+                                      },
+                  "drift_guard":  {
+                                      "cooldownSeconds":  35,
+                                      "durationSeconds":  10,
+                                      "charges":  2
+                                  },
+                  "sync_pilot":  {
+                                     "cooldownSeconds":  30,
+                                     "durationSeconds":  4,
+                                     "charges":  3
+                                 },
+                  "task_curator":  {
+                                       "cooldownSeconds":  40,
+                                       "durationSeconds":  0,
+                                       "charges":  2
+                                   },
+                  "burst_anchor":  {
+                                       "cooldownSeconds":  45,
+                                       "durationSeconds":  8,
+                                       "charges":  2
+                                   },
+                  "chain_custodian":  {
+                                          "cooldownSeconds":  50,
+                                          "durationSeconds":  20,
+                                          "charges":  1
+                                      },
+                  "protocol_arbiter":  {
+                                           "cooldownSeconds":  0,
+                                           "durationSeconds":  0,
+                                           "charges":  1
+                                       },
+                  "coil_runner":  {
+                                      "cooldownSeconds":  28,
+                                      "durationSeconds":  7,
+                                      "charges":  3
+                                  },
+                  "handshake_agent":  {
+                                          "cooldownSeconds":  0,
+                                          "durationSeconds":  0,
+                                          "charges":  1
+                                      },
+                  "vault_keeper":  {
+                                       "cooldownSeconds":  40,
+                                       "durationSeconds":  0,
+                                       "charges":  2
+                                   },
+                  "lumen_keeper":  {
+                                       "cooldownSeconds":  35,
+                                       "durationSeconds":  12,
+                                       "charges":  2
+                                   },
+                  "null_weaver":  {
+                                      "cooldownSeconds":  40,
+                                      "durationSeconds":  8,
+                                      "charges":  2
+                                  },
+                  "veil_driver":  {
+                                      "cooldownSeconds":  35,
+                                      "durationSeconds":  10,
+                                      "charges":  2
+                                  },
+                  "delay_artist":  {
+                                       "cooldownSeconds":  45,
+                                       "durationSeconds":  6,
+                                       "charges":  2
+                                   },
+                  "ghostwire":  {
+                                    "cooldownSeconds":  30,
+                                    "durationSeconds":  0,
+                                    "charges":  3
+                                },
+                  "fracturer":  {
+                                    "cooldownSeconds":  55,
+                                    "durationSeconds":  12,
+                                    "charges":  2
+                                },
+                  "relay_hijacker":  {
+                                         "cooldownSeconds":  40,
+                                         "durationSeconds":  7,
+                                         "charges":  2
+                                     },
+                  "grid_leech":  {
+                                     "cooldownSeconds":  35,
+                                     "durationSeconds":  0,
+                                     "charges":  3
+                                 },
+                  "pulse_spoofer":  {
+                                        "cooldownSeconds":  40,
+                                        "durationSeconds":  8,
+                                        "charges":  2
+                                    },
+                  "drift_stalker":  {
+                                        "cooldownSeconds":  28,
+                                        "durationSeconds":  2,
+                                        "charges":  3
+                                    },
+                  "decoy_smith":  {
+                                      "cooldownSeconds":  35,
+                                      "durationSeconds":  15,
+                                      "charges":  2
+                                  },
+                  "echo_thief":  {
+                                     "cooldownSeconds":  30,
+                                     "durationSeconds":  0,
+                                     "charges":  3
+                                 },
+                  "route_jammer":  {
+                                       "cooldownSeconds":  45,
+                                       "durationSeconds":  10,
+                                       "charges":  2
+                                   },
+                  "airlock_spider":  {
+                                         "cooldownSeconds":  42,
+                                         "durationSeconds":  6,
+                                         "charges":  2
+                                     },
+                  "cooldown_broker":  {
+                                          "cooldownSeconds":  0,
+                                          "durationSeconds":  20,
+                                          "charges":  2
+                                      },
+                  "fuse_eater":  {
+                                     "cooldownSeconds":  50,
+                                     "durationSeconds":  0,
+                                     "charges":  2
+                                 },
+                  "vision_gouger":  {
+                                        "cooldownSeconds":  40,
+                                        "durationSeconds":  9,
+                                        "charges":  2
+                                    },
+                  "exit_snarer":  {
+                                      "cooldownSeconds":  35,
+                                      "durationSeconds":  20,
+                                      "charges":  2
+                                  },
+                  "clone_smuggler":  {
+                                         "cooldownSeconds":  38,
+                                         "durationSeconds":  10,
+                                         "charges":  2
+                                     },
+                  "panic_sculptor":  {
+                                         "cooldownSeconds":  55,
+                                         "durationSeconds":  8,
+                                         "charges":  2
+                                     },
+                  "task_corruptor":  {
+                                         "cooldownSeconds":  45,
+                                         "durationSeconds":  12,
+                                         "charges":  2
+                                     },
+                  "debtkeeper":  {
+                                     "cooldownSeconds":  0,
+                                     "durationSeconds":  0,
+                                     "charges":  99
+                                 },
+                  "cartographer_exile":  {
+                                             "cooldownSeconds":  0,
+                                             "durationSeconds":  0,
+                                             "charges":  99
+                                         },
+                  "last_passenger":  {
+                                         "cooldownSeconds":  30,
+                                         "durationSeconds":  0,
+                                         "charges":  3
+                                     },
+                  "quiet_gambler":  {
+                                        "cooldownSeconds":  0,
+                                        "durationSeconds":  0,
+                                        "charges":  3
+                                    },
+                  "witness_broker":  {
+                                         "cooldownSeconds":  0,
+                                         "durationSeconds":  0,
+                                         "charges":  4
+                                     },
+                  "flux_nomad":  {
+                                     "cooldownSeconds":  20,
+                                     "durationSeconds":  0,
+                                     "charges":  99
+                                 },
+                  "scrap_baron":  {
+                                      "cooldownSeconds":  25,
+                                      "durationSeconds":  0,
+                                      "charges":  8
+                                  },
+                  "isolationist":  {
+                                       "cooldownSeconds":  0,
+                                       "durationSeconds":  0,
+                                       "charges":  99
+                                   },
+                  "threshold_seeker":  {
+                                           "cooldownSeconds":  0,
+                                           "durationSeconds":  0,
+                                           "charges":  99
+                                       },
+                  "timeout_merchant":  {
+                                           "cooldownSeconds":  0,
+                                           "durationSeconds":  0,
+                                           "charges":  3
+                                       },
+                  "relay_pilgrim":  {
+                                        "cooldownSeconds":  0,
+                                        "durationSeconds":  0,
+                                        "charges":  99
+                                    },
+                  "cinder_tourist":  {
+                                         "cooldownSeconds":  0,
+                                         "durationSeconds":  0,
+                                         "charges":  99
+                                     },
+                  "quick_hands":  {
+                                      "cooldownSeconds":  0,
+                                      "durationSeconds":  0,
+                                      "charges":  99
+                                  },
+                  "heavy_steps":  {
+                                      "cooldownSeconds":  0,
+                                      "durationSeconds":  0,
+                                      "charges":  99
+                                  },
+                  "cold_nerves":  {
+                                      "cooldownSeconds":  0,
+                                      "durationSeconds":  0,
+                                      "charges":  99
+                                  },
+                  "overloaded":  {
+                                     "cooldownSeconds":  0,
+                                     "durationSeconds":  0,
+                                     "charges":  99
+                                 },
+                  "lucky_break":  {
+                                      "cooldownSeconds":  0,
+                                      "durationSeconds":  0,
+                                      "charges":  1
+                                  },
+                  "glass_cannon":  {
+                                       "cooldownSeconds":  0,
+                                       "durationSeconds":  0,
+                                       "charges":  99
+                                   },
+                  "wide_lens":  {
+                                    "cooldownSeconds":  0,
+                                    "durationSeconds":  0,
+                                    "charges":  99
+                                },
+                  "late_starter":  {
+                                       "cooldownSeconds":  0,
+                                       "durationSeconds":  0,
+                                       "charges":  99
+                                   }
+              }
 }

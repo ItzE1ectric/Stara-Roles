@@ -6,6 +6,8 @@ Custom Among Us role planning and content pipeline.
 - `AMONG_US_CUSTOM_ROLES_ICON_PLAN.md` - research-backed planning document.
 - `custom_roles_pack/design/roles.csv` - Stara original custom roles dataset (no imported role list).
 - `custom_roles_pack/design/STARA_ORIGINAL_ROLES.md` - originality scope and design rules.
+- `custom_roles_pack/design/ROLE_IMPLEMENTATION_GUIDE.md` - engine event contract and trigger rules.
+- `custom_roles_pack/config/role_definitions.json` - runtime-ready role definitions (trigger, targeting, effects, balance, conflicts).
 - `custom_roles_pack/config/*.json` - spawn, cooldown, and lobby preset templates.
 - `custom_roles_pack/docs/*` - compatibility and legal/disclaimer docs.
 

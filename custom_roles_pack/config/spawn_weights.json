@@ -1,27 +1,522 @@
-{
-  "schemaVersion": "1.0",
-  "lastUpdated": "2026-05-22",
-  "global": {
-    "maxCustomCrewRoles": 3,
-    "maxCustomImpostorRoles": 2,
-    "maxCustomNeutralRoles": 1,
-    "allowDuplicateRoles": false
-  },
-  "roles": {
-    "archivist": 1.0,
-    "warden": 1.0,
-    "signaler": 0.9,
-    "oracle": 0.8,
-    "saboteur_plus": 1.0,
-    "mimic": 0.9,
-    "dissolver": 0.8,
-    "parasite": 0.8,
-    "broker": 0.5,
-    "fugitive": 0.5
-  },
-  "exclusions": [
-    ["archivist", "oracle"],
-    ["mimic", "parasite"],
-    ["broker", "fugitive"]
-  ]
+﻿{
+    "schemaVersion":  "2.0",
+    "lastUpdated":  "2026-05-22",
+    "global":  {
+                   "maxCrewmateRoles":  4,
+                   "maxImpostorRoles":  3,
+                   "maxNeutralRoles":  2,
+                   "maxModifiersPerPlayer":  1,
+                   "allowDuplicateRoles":  false,
+                   "allowDuplicateNeutrals":  false
+               },
+    "roles":  {
+                  "pulse_mapper":  {
+                                       "weight":  1,
+                                       "minPlayers":  7,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Crewmate",
+                                       "archetype":  "Investigative"
+                                   },
+                  "echo_clerk":  {
+                                     "weight":  1,
+                                     "minPlayers":  7,
+                                     "maxPerLobby":  1,
+                                     "enabled":  true,
+                                     "team":  "Crewmate",
+                                     "archetype":  "Investigative"
+                                 },
+                  "route_auditor":  {
+                                        "weight":  1,
+                                        "minPlayers":  7,
+                                        "maxPerLobby":  1,
+                                        "enabled":  true,
+                                        "team":  "Crewmate",
+                                        "archetype":  "Investigative"
+                                    },
+                  "residue_analyst":  {
+                                          "weight":  1,
+                                          "minPlayers":  7,
+                                          "maxPerLobby":  1,
+                                          "enabled":  true,
+                                          "team":  "Crewmate",
+                                          "archetype":  "Investigative"
+                                      },
+                  "static_scout":  {
+                                       "weight":  1,
+                                       "minPlayers":  7,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Crewmate",
+                                       "archetype":  "Investigative"
+                                   },
+                  "vector_witness":  {
+                                         "weight":  1,
+                                         "minPlayers":  7,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Crewmate",
+                                         "archetype":  "Investigative"
+                                     },
+                  "gatewright":  {
+                                     "weight":  1,
+                                     "minPlayers":  7,
+                                     "maxPerLobby":  1,
+                                     "enabled":  true,
+                                     "team":  "Crewmate",
+                                     "archetype":  "Support"
+                                 },
+                  "patchrunner":  {
+                                      "weight":  1,
+                                      "minPlayers":  7,
+                                      "maxPerLobby":  1,
+                                      "enabled":  true,
+                                      "team":  "Crewmate",
+                                      "archetype":  "Support"
+                                  },
+                  "signal_mason":  {
+                                       "weight":  1,
+                                       "minPlayers":  7,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Crewmate",
+                                       "archetype":  "Support"
+                                   },
+                  "coolant_marshal":  {
+                                          "weight":  1,
+                                          "minPlayers":  7,
+                                          "maxPerLobby":  1,
+                                          "enabled":  true,
+                                          "team":  "Crewmate",
+                                          "archetype":  "Protective"
+                                      },
+                  "drift_guard":  {
+                                      "weight":  1,
+                                      "minPlayers":  7,
+                                      "maxPerLobby":  1,
+                                      "enabled":  true,
+                                      "team":  "Crewmate",
+                                      "archetype":  "Protective"
+                                  },
+                  "sync_pilot":  {
+                                     "weight":  1,
+                                     "minPlayers":  7,
+                                     "maxPerLobby":  1,
+                                     "enabled":  true,
+                                     "team":  "Crewmate",
+                                     "archetype":  "Mobility"
+                                 },
+                  "task_curator":  {
+                                       "weight":  1,
+                                       "minPlayers":  7,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Crewmate",
+                                       "archetype":  "Support"
+                                   },
+                  "burst_anchor":  {
+                                       "weight":  1,
+                                       "minPlayers":  7,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Crewmate",
+                                       "archetype":  "Control"
+                                   },
+                  "chain_custodian":  {
+                                          "weight":  1,
+                                          "minPlayers":  7,
+                                          "maxPerLobby":  1,
+                                          "enabled":  true,
+                                          "team":  "Crewmate",
+                                          "archetype":  "Investigative"
+                                      },
+                  "protocol_arbiter":  {
+                                           "weight":  0.75,
+                                           "minPlayers":  7,
+                                           "maxPerLobby":  1,
+                                           "enabled":  true,
+                                           "team":  "Crewmate",
+                                           "archetype":  "Meeting"
+                                       },
+                  "coil_runner":  {
+                                      "weight":  1,
+                                      "minPlayers":  7,
+                                      "maxPerLobby":  1,
+                                      "enabled":  true,
+                                      "team":  "Crewmate",
+                                      "archetype":  "Mobility"
+                                  },
+                  "handshake_agent":  {
+                                          "weight":  1,
+                                          "minPlayers":  7,
+                                          "maxPerLobby":  1,
+                                          "enabled":  true,
+                                          "team":  "Crewmate",
+                                          "archetype":  "Social"
+                                      },
+                  "vault_keeper":  {
+                                       "weight":  1,
+                                       "minPlayers":  7,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Crewmate",
+                                       "archetype":  "Defensive"
+                                   },
+                  "lumen_keeper":  {
+                                       "weight":  1,
+                                       "minPlayers":  7,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Crewmate",
+                                       "archetype":  "Support"
+                                   },
+                  "null_weaver":  {
+                                      "weight":  0.92,
+                                      "minPlayers":  8,
+                                      "maxPerLobby":  1,
+                                      "enabled":  true,
+                                      "team":  "Impostor",
+                                      "archetype":  "Control"
+                                  },
+                  "veil_driver":  {
+                                      "weight":  0.92,
+                                      "minPlayers":  8,
+                                      "maxPerLobby":  1,
+                                      "enabled":  true,
+                                      "team":  "Impostor",
+                                      "archetype":  "Concealment"
+                                  },
+                  "delay_artist":  {
+                                       "weight":  0.92,
+                                       "minPlayers":  8,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Impostor",
+                                       "archetype":  "Concealment"
+                                   },
+                  "ghostwire":  {
+                                    "weight":  0.92,
+                                    "minPlayers":  8,
+                                    "maxPerLobby":  1,
+                                    "enabled":  true,
+                                    "team":  "Impostor",
+                                    "archetype":  "Misdirection"
+                                },
+                  "fracturer":  {
+                                    "weight":  0.92,
+                                    "minPlayers":  8,
+                                    "maxPerLobby":  1,
+                                    "enabled":  true,
+                                    "team":  "Impostor",
+                                    "archetype":  "Sabotage"
+                                },
+                  "relay_hijacker":  {
+                                         "weight":  0.92,
+                                         "minPlayers":  8,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Impostor",
+                                         "archetype":  "Misdirection"
+                                     },
+                  "grid_leech":  {
+                                     "weight":  0.92,
+                                     "minPlayers":  8,
+                                     "maxPerLobby":  1,
+                                     "enabled":  true,
+                                     "team":  "Impostor",
+                                     "archetype":  "Tempo"
+                                 },
+                  "pulse_spoofer":  {
+                                        "weight":  0.92,
+                                        "minPlayers":  8,
+                                        "maxPerLobby":  1,
+                                        "enabled":  true,
+                                        "team":  "Impostor",
+                                        "archetype":  "Misdirection"
+                                    },
+                  "drift_stalker":  {
+                                        "weight":  0.92,
+                                        "minPlayers":  8,
+                                        "maxPerLobby":  1,
+                                        "enabled":  true,
+                                        "team":  "Impostor",
+                                        "archetype":  "Mobility"
+                                    },
+                  "decoy_smith":  {
+                                      "weight":  0.92,
+                                      "minPlayers":  8,
+                                      "maxPerLobby":  1,
+                                      "enabled":  true,
+                                      "team":  "Impostor",
+                                      "archetype":  "Misdirection"
+                                  },
+                  "echo_thief":  {
+                                     "weight":  0.92,
+                                     "minPlayers":  8,
+                                     "maxPerLobby":  1,
+                                     "enabled":  true,
+                                     "team":  "Impostor",
+                                     "archetype":  "Misdirection"
+                                 },
+                  "route_jammer":  {
+                                       "weight":  0.92,
+                                       "minPlayers":  8,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Impostor",
+                                       "archetype":  "Control"
+                                   },
+                  "airlock_spider":  {
+                                         "weight":  0.87,
+                                         "minPlayers":  8,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Impostor",
+                                         "archetype":  "Trap"
+                                     },
+                  "cooldown_broker":  {
+                                          "weight":  0.92,
+                                          "minPlayers":  8,
+                                          "maxPerLobby":  1,
+                                          "enabled":  true,
+                                          "team":  "Impostor",
+                                          "archetype":  "Tempo"
+                                      },
+                  "fuse_eater":  {
+                                     "weight":  0.92,
+                                     "minPlayers":  8,
+                                     "maxPerLobby":  1,
+                                     "enabled":  true,
+                                     "team":  "Impostor",
+                                     "archetype":  "Sabotage"
+                                 },
+                  "vision_gouger":  {
+                                        "weight":  0.92,
+                                        "minPlayers":  8,
+                                        "maxPerLobby":  1,
+                                        "enabled":  true,
+                                        "team":  "Impostor",
+                                        "archetype":  "Concealment"
+                                    },
+                  "exit_snarer":  {
+                                      "weight":  0.87,
+                                      "minPlayers":  8,
+                                      "maxPerLobby":  1,
+                                      "enabled":  true,
+                                      "team":  "Impostor",
+                                      "archetype":  "Trap"
+                                  },
+                  "clone_smuggler":  {
+                                         "weight":  0.92,
+                                         "minPlayers":  8,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Impostor",
+                                         "archetype":  "Misdirection"
+                                     },
+                  "panic_sculptor":  {
+                                         "weight":  0.92,
+                                         "minPlayers":  8,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Impostor",
+                                         "archetype":  "Misdirection"
+                                     },
+                  "task_corruptor":  {
+                                         "weight":  0.92,
+                                         "minPlayers":  8,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Impostor",
+                                         "archetype":  "Control"
+                                     },
+                  "debtkeeper":  {
+                                     "weight":  0.45,
+                                     "minPlayers":  9,
+                                     "maxPerLobby":  1,
+                                     "enabled":  true,
+                                     "team":  "Neutral",
+                                     "archetype":  "Objective"
+                                 },
+                  "cartographer_exile":  {
+                                             "weight":  0.45,
+                                             "minPlayers":  9,
+                                             "maxPerLobby":  1,
+                                             "enabled":  true,
+                                             "team":  "Neutral",
+                                             "archetype":  "Objective"
+                                         },
+                  "last_passenger":  {
+                                         "weight":  0.5,
+                                         "minPlayers":  9,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Neutral",
+                                         "archetype":  "Survival"
+                                     },
+                  "quiet_gambler":  {
+                                        "weight":  0.3,
+                                        "minPlayers":  9,
+                                        "maxPerLobby":  1,
+                                        "enabled":  true,
+                                        "team":  "Neutral",
+                                        "archetype":  "Meeting"
+                                    },
+                  "witness_broker":  {
+                                         "weight":  0.55,
+                                         "minPlayers":  9,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Neutral",
+                                         "archetype":  "Social"
+                                     },
+                  "flux_nomad":  {
+                                     "weight":  0.55,
+                                     "minPlayers":  9,
+                                     "maxPerLobby":  1,
+                                     "enabled":  true,
+                                     "team":  "Neutral",
+                                     "archetype":  "Movement"
+                                 },
+                  "scrap_baron":  {
+                                      "weight":  0.55,
+                                      "minPlayers":  9,
+                                      "maxPerLobby":  1,
+                                      "enabled":  true,
+                                      "team":  "Neutral",
+                                      "archetype":  "Resource"
+                                  },
+                  "isolationist":  {
+                                       "weight":  0.5,
+                                       "minPlayers":  9,
+                                       "maxPerLobby":  1,
+                                       "enabled":  true,
+                                       "team":  "Neutral",
+                                       "archetype":  "Survival"
+                                   },
+                  "threshold_seeker":  {
+                                           "weight":  0.45,
+                                           "minPlayers":  9,
+                                           "maxPerLobby":  1,
+                                           "enabled":  true,
+                                           "team":  "Neutral",
+                                           "archetype":  "Objective"
+                                       },
+                  "timeout_merchant":  {
+                                           "weight":  0.3,
+                                           "minPlayers":  9,
+                                           "maxPerLobby":  1,
+                                           "enabled":  true,
+                                           "team":  "Neutral",
+                                           "archetype":  "Meeting"
+                                       },
+                  "relay_pilgrim":  {
+                                        "weight":  0.45,
+                                        "minPlayers":  9,
+                                        "maxPerLobby":  1,
+                                        "enabled":  true,
+                                        "team":  "Neutral",
+                                        "archetype":  "Objective"
+                                    },
+                  "cinder_tourist":  {
+                                         "weight":  0.45,
+                                         "minPlayers":  9,
+                                         "maxPerLobby":  1,
+                                         "enabled":  true,
+                                         "team":  "Neutral",
+                                         "archetype":  "Objective"
+                                     }
+              },
+    "modifiers":  {
+                      "quick_hands":  {
+                                          "weight":  0.7,
+                                          "minPlayers":  6,
+                                          "maxPerLobby":  3,
+                                          "enabled":  true,
+                                          "team":  "Any",
+                                          "archetype":  "Modifier"
+                                      },
+                      "heavy_steps":  {
+                                          "weight":  0.7,
+                                          "minPlayers":  6,
+                                          "maxPerLobby":  3,
+                                          "enabled":  true,
+                                          "team":  "Any",
+                                          "archetype":  "Modifier"
+                                      },
+                      "cold_nerves":  {
+                                          "weight":  0.7,
+                                          "minPlayers":  6,
+                                          "maxPerLobby":  3,
+                                          "enabled":  true,
+                                          "team":  "Any",
+                                          "archetype":  "Modifier"
+                                      },
+                      "overloaded":  {
+                                         "weight":  0.7,
+                                         "minPlayers":  6,
+                                         "maxPerLobby":  3,
+                                         "enabled":  true,
+                                         "team":  "Any",
+                                         "archetype":  "Modifier"
+                                     },
+                      "lucky_break":  {
+                                          "weight":  0.7,
+                                          "minPlayers":  6,
+                                          "maxPerLobby":  3,
+                                          "enabled":  true,
+                                          "team":  "Any",
+                                          "archetype":  "Modifier"
+                                      },
+                      "glass_cannon":  {
+                                           "weight":  0.7,
+                                           "minPlayers":  6,
+                                           "maxPerLobby":  3,
+                                           "enabled":  true,
+                                           "team":  "Any",
+                                           "archetype":  "Modifier"
+                                       },
+                      "wide_lens":  {
+                                        "weight":  0.7,
+                                        "minPlayers":  6,
+                                        "maxPerLobby":  3,
+                                        "enabled":  true,
+                                        "team":  "Any",
+                                        "archetype":  "Modifier"
+                                    },
+                      "late_starter":  {
+                                           "weight":  0.7,
+                                           "minPlayers":  6,
+                                           "maxPerLobby":  3,
+                                           "enabled":  true,
+                                           "team":  "Any",
+                                           "archetype":  "Modifier"
+                                       }
+                  },
+    "conflicts":  [
+                      [
+                          "coolant_marshal",
+                          "panic_sculptor"
+                      ],
+                      [
+                          "drift_guard",
+                          "route_jammer"
+                      ],
+                      [
+                          "handshake_agent",
+                          "witness_broker"
+                      ],
+                      [
+                          "protocol_arbiter",
+                          "quiet_gambler"
+                      ],
+                      [
+                          "protocol_arbiter",
+                          "timeout_merchant"
+                      ],
+                      [
+                          "pulse_mapper",
+                          "pulse_spoofer"
+                      ]
+                  ]
 }

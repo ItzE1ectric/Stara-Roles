@@ -1,0 +1,2643 @@
+﻿[
+    {
+        "id":  "pulse_mapper",
+        "displayName":  "Pulse Mapper",
+        "team":  "Crewmate",
+        "archetype":  "Investigative",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Pulse Mapper",
+                        "cooldownSeconds":  30,
+                        "durationSeconds":  12,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "intel_scan",
+                            "summary":  "Place a room pulse and watch entry/exit count changes in real time."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "pulse_spoofer"
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Split movement and spoof traffic",
+                      "iconFile":  "PulseMapper.png",
+                      "headerFile":  "PulseMapper.png"
+                  }
+    },
+    {
+        "id":  "echo_clerk",
+        "displayName":  "Echo Clerk",
+        "team":  "Crewmate",
+        "archetype":  "Investigative",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Echo Clerk",
+                        "cooldownSeconds":  35,
+                        "durationSeconds":  8,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "intel_scan",
+                            "summary":  "Record the last three room transitions of the nearest player."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Rotate targets and break line of sight",
+                      "iconFile":  "EchoClerk.png",
+                      "headerFile":  "EchoClerk.png"
+                  }
+    },
+    {
+        "id":  "route_auditor",
+        "displayName":  "Route Auditor",
+        "team":  "Crewmate",
+        "archetype":  "Investigative",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Route Auditor",
+                        "cooldownSeconds":  40,
+                        "durationSeconds":  0,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "intel_scan",
+                            "summary":  "Audit one player path and flag impossible map jumps."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Use legal vent chains and timing",
+                      "iconFile":  "RouteAuditor.png",
+                      "headerFile":  "RouteAuditor.png"
+                  }
+    },
+    {
+        "id":  "residue_analyst",
+        "displayName":  "Residue Analyst",
+        "team":  "Crewmate",
+        "archetype":  "Investigative",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_report",
+                        "buttonLabel":  "Residue Analyst",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "intel_scan",
+                            "summary":  "On report, reveal a rough death-time bracket for the body."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Delay reports and stack bodies",
+                      "iconFile":  "ResidueAnalyst.png",
+                      "headerFile":  "ResidueAnalyst.png"
+                  }
+    },
+    {
+        "id":  "static_scout",
+        "displayName":  "Static Scout",
+        "team":  "Crewmate",
+        "archetype":  "Investigative",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_tick",
+                        "buttonLabel":  "Static Scout",
+                        "cooldownSeconds":  25,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "intel_scan",
+                            "summary":  "Get a ping when two players idle together nearby for too long."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Keep moving and avoid long stacks",
+                      "iconFile":  "StaticScout.png",
+                      "headerFile":  "StaticScout.png"
+                  }
+    },
+    {
+        "id":  "vector_witness",
+        "displayName":  "Vector Witness",
+        "team":  "Crewmate",
+        "archetype":  "Investigative",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_nearby_kill",
+                        "buttonLabel":  "Vector Witness",
+                        "cooldownSeconds":  45,
+                        "durationSeconds":  3,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "intel_scan",
+                            "summary":  "After a nearby kill, briefly see the killer escape direction."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Use doors and fake direction",
+                      "iconFile":  "VectorWitness.png",
+                      "headerFile":  "VectorWitness.png"
+                  }
+    },
+    {
+        "id":  "gatewright",
+        "displayName":  "Gatewright",
+        "team":  "Crewmate",
+        "archetype":  "Support",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Gatewright",
+                        "cooldownSeconds":  35,
+                        "durationSeconds":  12,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "door",
+                          "targetTeam":  "ally_or_any",
+                          "maxRangeMeters":  1.75,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "utility_boost",
+                            "summary":  "Prop one door open so it cannot be shut for a short time."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Kill away from protected doors",
+                      "iconFile":  "Gatewright.png",
+                      "headerFile":  "Gatewright.png"
+                  }
+    },
+    {
+        "id":  "patchrunner",
+        "displayName":  "Patchrunner",
+        "team":  "Crewmate",
+        "archetype":  "Support",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Patchrunner",
+                        "cooldownSeconds":  40,
+                        "durationSeconds":  0,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "sabotage",
+                          "targetTeam":  "ally_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "utility_boost",
+                            "summary":  "Instantly finish one non-critical sabotage interaction node."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Pressure with layered sabotage timing",
+                      "iconFile":  "Patchrunner.png",
+                      "headerFile":  "Patchrunner.png"
+                  }
+    },
+    {
+        "id":  "signal_mason",
+        "displayName":  "Signal Mason",
+        "team":  "Crewmate",
+        "archetype":  "Support",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Signal Mason",
+                        "cooldownSeconds":  45,
+                        "durationSeconds":  8,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "sabotage",
+                          "targetTeam":  "ally_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "utility_boost",
+                            "summary":  "Temporarily restore one utility panel during comm disruption."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Force movement away from panels",
+                      "iconFile":  "SignalMason.png",
+                      "headerFile":  "SignalMason.png"
+                  }
+    },
+    {
+        "id":  "coolant_marshal",
+        "displayName":  "Coolant Marshal",
+        "team":  "Crewmate",
+        "archetype":  "Protective",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_sabotage_start",
+                        "buttonLabel":  "Coolant Marshal",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  10,
+                        "charges":  1,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "sabotage",
+                          "targetTeam":  "ally_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "shield_or_prevent",
+                            "summary":  "Slow one critical sabotage timer drain once per game."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "panic_sculptor"
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Bait usage before true push",
+                      "iconFile":  "CoolantMarshal.png",
+                      "headerFile":  "CoolantMarshal.png"
+                  }
+    },
+    {
+        "id":  "drift_guard",
+        "displayName":  "Drift Guard",
+        "team":  "Crewmate",
+        "archetype":  "Protective",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Drift Guard",
+                        "cooldownSeconds":  35,
+                        "durationSeconds":  10,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "ally_or_any",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "shield_or_prevent",
+                            "summary":  "Anchor a teammate against displacement effects."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "route_jammer"
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Target unanchored players",
+                      "iconFile":  "DriftGuard.png",
+                      "headerFile":  "DriftGuard.png"
+                  }
+    },
+    {
+        "id":  "sync_pilot",
+        "displayName":  "Sync Pilot",
+        "team":  "Crewmate",
+        "archetype":  "Mobility",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Sync Pilot",
+                        "cooldownSeconds":  30,
+                        "durationSeconds":  4,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "reposition",
+                            "summary":  "Set a beacon and snap back to it after a short charge."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Track beacon placement and intercept return",
+                      "iconFile":  "SyncPilot.png",
+                      "headerFile":  "SyncPilot.png"
+                  }
+    },
+    {
+        "id":  "task_curator",
+        "displayName":  "Task Curator",
+        "team":  "Crewmate",
+        "archetype":  "Support",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Task Curator",
+                        "cooldownSeconds":  40,
+                        "durationSeconds":  0,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "ally_or_any",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "utility_boost",
+                            "summary":  "Grant an ally a bonus micro-task that gives a short buff on completion."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Focus-kill buffed allies",
+                      "iconFile":  "TaskCurator.png",
+                      "headerFile":  "TaskCurator.png"
+                  }
+    },
+    {
+        "id":  "burst_anchor",
+        "displayName":  "Burst Anchor",
+        "team":  "Crewmate",
+        "archetype":  "Control",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Burst Anchor",
+                        "cooldownSeconds":  45,
+                        "durationSeconds":  8,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "disrupt",
+                            "summary":  "Create a zone where movement speed is normalized for everyone."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Fight outside anchor zones",
+                      "iconFile":  "BurstAnchor.png",
+                      "headerFile":  "BurstAnchor.png"
+                  }
+    },
+    {
+        "id":  "chain_custodian",
+        "displayName":  "Chain Custodian",
+        "team":  "Crewmate",
+        "archetype":  "Investigative",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Chain Custodian",
+                        "cooldownSeconds":  50,
+                        "durationSeconds":  20,
+                        "charges":  1,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "intel_scan",
+                            "summary":  "Link two players; if one dies the other gets a killer-room ping."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Break links by isolating players",
+                      "iconFile":  "ChainCustodian.png",
+                      "headerFile":  "ChainCustodian.png"
+                  }
+    },
+    {
+        "id":  "protocol_arbiter",
+        "displayName":  "Protocol Arbiter",
+        "team":  "Crewmate",
+        "archetype":  "Meeting",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_meeting_vote",
+                        "buttonLabel":  "Protocol Arbiter",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  1,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "meeting",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "meeting_control",
+                            "summary":  "Force one runoff vote between the top two vote targets."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.75,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "timeout_merchant",
+                          "quiet_gambler"
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Keep vote spread wide",
+                      "iconFile":  "ProtocolArbiter.png",
+                      "headerFile":  "ProtocolArbiter.png"
+                  }
+    },
+    {
+        "id":  "coil_runner",
+        "displayName":  "Coil Runner",
+        "team":  "Crewmate",
+        "archetype":  "Mobility",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Coil Runner",
+                        "cooldownSeconds":  28,
+                        "durationSeconds":  7,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "reposition",
+                            "summary":  "Sprint hard, but cannot report or use consoles while active."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Force sprint in bad timing windows",
+                      "iconFile":  "CoilRunner.png",
+                      "headerFile":  "CoilRunner.png"
+                  }
+    },
+    {
+        "id":  "handshake_agent",
+        "displayName":  "Handshake Agent",
+        "team":  "Crewmate",
+        "archetype":  "Social",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_pact",
+                        "buttonLabel":  "Handshake Agent",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  1,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "ally_or_any",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "link_or_contract",
+                            "summary":  "Mutually pact with one player; betrayal triggers a public alert."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "witness_broker"
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Avoid hard commitments and force ambiguity",
+                      "iconFile":  "HandshakeAgent.png",
+                      "headerFile":  "HandshakeAgent.png"
+                  }
+    },
+    {
+        "id":  "vault_keeper",
+        "displayName":  "Vault Keeper",
+        "team":  "Crewmate",
+        "archetype":  "Defensive",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "reaction_on_reveal",
+                        "buttonLabel":  "Vault Keeper",
+                        "cooldownSeconds":  40,
+                        "durationSeconds":  0,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "any_or_enemy",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "anti_intel",
+                            "summary":  "Hide your role traces from one inspection or reveal effect."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Force multiple checks before meetings",
+                      "iconFile":  "VaultKeeper.png",
+                      "headerFile":  "VaultKeeper.png"
+                  }
+    },
+    {
+        "id":  "lumen_keeper",
+        "displayName":  "Lumen Keeper",
+        "team":  "Crewmate",
+        "archetype":  "Support",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Lumen Keeper",
+                        "cooldownSeconds":  35,
+                        "durationSeconds":  12,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "ally_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "utility_boost",
+                            "summary":  "Drop a portable light zone that offsets darkness nearby."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  1,
+                        "minPlayers":  7,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Crew standard win condition",
+                      "counterplay":  "Drag fights away from light zones",
+                      "iconFile":  "LumenKeeper.png",
+                      "headerFile":  "LumenKeeper.png"
+                  }
+    },
+    {
+        "id":  "null_weaver",
+        "displayName":  "Null Weaver",
+        "team":  "Impostor",
+        "archetype":  "Control",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Null Weaver",
+                        "cooldownSeconds":  40,
+                        "durationSeconds":  8,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "disrupt",
+                            "summary":  "Cast a null zone that disables non-kill abilities in an area."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Leave zone and call meeting info",
+                      "iconFile":  "NullWeaver.png",
+                      "headerFile":  "NullWeaver.png"
+                  }
+    },
+    {
+        "id":  "veil_driver",
+        "displayName":  "Veil Driver",
+        "team":  "Impostor",
+        "archetype":  "Concealment",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Veil Driver",
+                        "cooldownSeconds":  35,
+                        "durationSeconds":  10,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "obfuscate",
+                            "summary":  "Generate fake footsteps to frame pathing evidence."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Cross-check with visual sightings",
+                      "iconFile":  "VeilDriver.png",
+                      "headerFile":  "VeilDriver.png"
+                  }
+    },
+    {
+        "id":  "delay_artist",
+        "displayName":  "Delay Artist",
+        "team":  "Impostor",
+        "archetype":  "Concealment",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Delay Artist",
+                        "cooldownSeconds":  45,
+                        "durationSeconds":  6,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "obfuscate",
+                            "summary":  "Add a short delay before the next body can be reported."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Maintain buddy confirms and map control",
+                      "iconFile":  "DelayArtist.png",
+                      "headerFile":  "DelayArtist.png"
+                  }
+    },
+    {
+        "id":  "ghostwire",
+        "displayName":  "Ghostwire",
+        "team":  "Impostor",
+        "archetype":  "Misdirection",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Ghostwire",
+                        "cooldownSeconds":  30,
+                        "durationSeconds":  0,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "vent",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  1.75,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "fake_signal",
+                            "summary":  "Trigger a remote fake vent pop audio cue."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Track real vent positions",
+                      "iconFile":  "Ghostwire.png",
+                      "headerFile":  "Ghostwire.png"
+                  }
+    },
+    {
+        "id":  "fracturer",
+        "displayName":  "Fracturer",
+        "team":  "Impostor",
+        "archetype":  "Sabotage",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Fracturer",
+                        "cooldownSeconds":  55,
+                        "durationSeconds":  12,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "sabotage",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "sabotage_mutate",
+                            "summary":  "Split one sabotage objective into two distant interaction points."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Pre-assign repair teams",
+                      "iconFile":  "Fracturer.png",
+                      "headerFile":  "Fracturer.png"
+                  }
+    },
+    {
+        "id":  "relay_hijacker",
+        "displayName":  "Relay Hijacker",
+        "team":  "Impostor",
+        "archetype":  "Misdirection",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Relay Hijacker",
+                        "cooldownSeconds":  40,
+                        "durationSeconds":  7,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "fake_signal",
+                            "summary":  "Invert one tracking ping direction for a target player."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Use multiple independent confirmations",
+                      "iconFile":  "RelayHijacker.png",
+                      "headerFile":  "RelayHijacker.png"
+                  }
+    },
+    {
+        "id":  "grid_leech",
+        "displayName":  "Grid Leech",
+        "team":  "Impostor",
+        "archetype":  "Tempo",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Grid Leech",
+                        "cooldownSeconds":  35,
+                        "durationSeconds":  0,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "cooldown_manipulation",
+                            "summary":  "Steal a few seconds from a nearby ability cooldown and add it to yours."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Spread out and avoid proximity",
+                      "iconFile":  "GridLeech.png",
+                      "headerFile":  "GridLeech.png"
+                  }
+    },
+    {
+        "id":  "pulse_spoofer",
+        "displayName":  "Pulse Spoofer",
+        "team":  "Impostor",
+        "archetype":  "Misdirection",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Pulse Spoofer",
+                        "cooldownSeconds":  40,
+                        "durationSeconds":  8,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "fake_signal",
+                            "summary":  "Inject fake occupancy blips into map-intel tools."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "pulse_mapper"
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Rely on body pathing not only admin data",
+                      "iconFile":  "PulseSpoofer.png",
+                      "headerFile":  "PulseSpoofer.png"
+                  }
+    },
+    {
+        "id":  "drift_stalker",
+        "displayName":  "Drift Stalker",
+        "team":  "Impostor",
+        "archetype":  "Mobility",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Drift Stalker",
+                        "cooldownSeconds":  28,
+                        "durationSeconds":  2,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "door",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  1.75,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "reposition",
+                            "summary":  "Short phase dash through one doorway lane."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Hold chokepoints after suspicious movement",
+                      "iconFile":  "DriftStalker.png",
+                      "headerFile":  "DriftStalker.png"
+                  }
+    },
+    {
+        "id":  "decoy_smith",
+        "displayName":  "Decoy Smith",
+        "team":  "Impostor",
+        "archetype":  "Misdirection",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Decoy Smith",
+                        "cooldownSeconds":  35,
+                        "durationSeconds":  15,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "fake_signal",
+                            "summary":  "Place a fake body silhouette that vanishes on contact."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Require confirm before emergency calls",
+                      "iconFile":  "DecoySmith.png",
+                      "headerFile":  "DecoySmith.png"
+                  }
+    },
+    {
+        "id":  "echo_thief",
+        "displayName":  "Echo Thief",
+        "team":  "Impostor",
+        "archetype":  "Misdirection",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Echo Thief",
+                        "cooldownSeconds":  30,
+                        "durationSeconds":  0,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "fake_signal",
+                            "summary":  "Replay the last alert sound from a different location."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Check timeline against known events",
+                      "iconFile":  "EchoThief.png",
+                      "headerFile":  "EchoThief.png"
+                  }
+    },
+    {
+        "id":  "route_jammer",
+        "displayName":  "Route Jammer",
+        "team":  "Impostor",
+        "archetype":  "Control",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Route Jammer",
+                        "cooldownSeconds":  45,
+                        "durationSeconds":  10,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "disrupt",
+                            "summary":  "Scramble one target minimap hints and directional tools."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "drift_guard"
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Call out jam and regroup manually",
+                      "iconFile":  "RouteJammer.png",
+                      "headerFile":  "RouteJammer.png"
+                  }
+    },
+    {
+        "id":  "airlock_spider",
+        "displayName":  "Airlock Spider",
+        "team":  "Impostor",
+        "archetype":  "Trap",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Airlock Spider",
+                        "cooldownSeconds":  42,
+                        "durationSeconds":  6,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "door",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  1.75,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "trap_deploy",
+                            "summary":  "Prime a doorway snare that briefly traps first passerby."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.87,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Bait traps with low-value crossings",
+                      "iconFile":  "AirlockSpider.png",
+                      "headerFile":  "AirlockSpider.png"
+                  }
+    },
+    {
+        "id":  "cooldown_broker",
+        "displayName":  "Cooldown Broker",
+        "team":  "Impostor",
+        "archetype":  "Tempo",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "toggle_stance",
+                        "buttonLabel":  "Cooldown Broker",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  20,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "cooldown_manipulation",
+                            "summary":  "Trade longer kill cooldown for faster role ability cooldown."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Punish while kill timer is extended",
+                      "iconFile":  "CooldownBroker.png",
+                      "headerFile":  "CooldownBroker.png"
+                  }
+    },
+    {
+        "id":  "fuse_eater",
+        "displayName":  "Fuse Eater",
+        "team":  "Impostor",
+        "archetype":  "Sabotage",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Fuse Eater",
+                        "cooldownSeconds":  50,
+                        "durationSeconds":  0,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "sabotage",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "sabotage_mutate",
+                            "summary":  "Consume a recently fixed sabotage to shorten next sabotage cooldown."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Fix in groups and track repeat windows",
+                      "iconFile":  "FuseEater.png",
+                      "headerFile":  "FuseEater.png"
+                  }
+    },
+    {
+        "id":  "vision_gouger",
+        "displayName":  "Vision Gouger",
+        "team":  "Impostor",
+        "archetype":  "Concealment",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Vision Gouger",
+                        "cooldownSeconds":  40,
+                        "durationSeconds":  9,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "obfuscate",
+                            "summary":  "Apply local darkness around a chosen target area."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Rotate into bright rooms and pair up",
+                      "iconFile":  "VisionGouger.png",
+                      "headerFile":  "VisionGouger.png"
+                  }
+    },
+    {
+        "id":  "exit_snarer",
+        "displayName":  "Exit Snarer",
+        "team":  "Impostor",
+        "archetype":  "Trap",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Exit Snarer",
+                        "cooldownSeconds":  35,
+                        "durationSeconds":  20,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "vent",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  1.75,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "trap_deploy",
+                            "summary":  "Mark one vent exit so next user triggers a loud alert."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.87,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Avoid predictable vent loops",
+                      "iconFile":  "ExitSnarer.png",
+                      "headerFile":  "ExitSnarer.png"
+                  }
+    },
+    {
+        "id":  "clone_smuggler",
+        "displayName":  "Clone Smuggler",
+        "team":  "Impostor",
+        "archetype":  "Misdirection",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Clone Smuggler",
+                        "cooldownSeconds":  38,
+                        "durationSeconds":  10,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "fake_signal",
+                            "summary":  "Release a timed clone that walks a straight fake route."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Verify with direct proximity checks",
+                      "iconFile":  "CloneSmuggler.png",
+                      "headerFile":  "CloneSmuggler.png"
+                  }
+    },
+    {
+        "id":  "panic_sculptor",
+        "displayName":  "Panic Sculptor",
+        "team":  "Impostor",
+        "archetype":  "Misdirection",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Panic Sculptor",
+                        "cooldownSeconds":  55,
+                        "durationSeconds":  8,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "vent",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  1.75,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "fake_signal",
+                            "summary":  "Trigger a fake critical-warning event without loss condition."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "coolant_marshal"
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Validate panel objectives before scattering",
+                      "iconFile":  "PanicSculptor.png",
+                      "headerFile":  "PanicSculptor.png"
+                  }
+    },
+    {
+        "id":  "task_corruptor",
+        "displayName":  "Task Corruptor",
+        "team":  "Impostor",
+        "archetype":  "Control",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "active_button",
+                        "buttonLabel":  "Task Corruptor",
+                        "cooldownSeconds":  45,
+                        "durationSeconds":  12,
+                        "charges":  2,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "enemy_or_any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "disrupt",
+                            "summary":  "Corrupt one task-progress segment until cleansed at station."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.92,
+                        "minPlayers":  8,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Impostor parity/kill win condition",
+                      "counterplay":  "Prioritize cleanse station calls",
+                      "iconFile":  "TaskCorruptor.png",
+                      "headerFile":  "TaskCorruptor.png"
+                  }
+    },
+    {
+        "id":  "debtkeeper",
+        "displayName":  "Debtkeeper",
+        "team":  "Neutral",
+        "archetype":  "Objective",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_on_vote_and_report",
+                        "buttonLabel":  "Debtkeeper",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "meeting",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "objective_progress",
+                            "summary":  "Collect debt tokens from vote majorities and reports."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.45,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Collect required debt quota to win",
+                      "counterplay":  "Disrupt predictable voting blocs",
+                      "iconFile":  "Debtkeeper.png",
+                      "headerFile":  "Debtkeeper.png"
+                  }
+    },
+    {
+        "id":  "cartographer_exile",
+        "displayName":  "Cartographer Exile",
+        "team":  "Neutral",
+        "archetype":  "Objective",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_on_room_enter",
+                        "buttonLabel":  "Cartographer Exile",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "objective_progress",
+                            "summary":  "Visit every map sector twice while alive."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.45,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Complete sector route before death",
+                      "counterplay":  "Patrol low-traffic sectors",
+                      "iconFile":  "CartographerExile.png",
+                      "headerFile":  "CartographerExile.png"
+                  }
+    },
+    {
+        "id":  "last_passenger",
+        "displayName":  "Last Passenger",
+        "team":  "Neutral",
+        "archetype":  "Survival",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_on_elimination",
+                        "buttonLabel":  "Last Passenger",
+                        "cooldownSeconds":  30,
+                        "durationSeconds":  0,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "survival_progress",
+                            "summary":  "Receive private checkpoints as players are eliminated."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.5,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Be alive in final three and finish checkpoints",
+                      "counterplay":  "Pressure late-game isolation",
+                      "iconFile":  "LastPassenger.png",
+                      "headerFile":  "LastPassenger.png"
+                  }
+    },
+    {
+        "id":  "quiet_gambler",
+        "displayName":  "Quiet Gambler",
+        "team":  "Neutral",
+        "archetype":  "Meeting",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_meeting_start",
+                        "buttonLabel":  "Quiet Gambler",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "meeting",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "meeting_control",
+                            "summary":  "Wager on meeting outcomes without revealing target."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.3,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Win three wagers before game end",
+                      "counterplay":  "Force chaotic votes",
+                      "iconFile":  "QuietGambler.png",
+                      "headerFile":  "QuietGambler.png"
+                  }
+    },
+    {
+        "id":  "witness_broker",
+        "displayName":  "Witness Broker",
+        "team":  "Neutral",
+        "archetype":  "Social",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_meeting_start",
+                        "buttonLabel":  "Witness Broker",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  4,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "meeting",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "link_or_contract",
+                            "summary":  "Sell one true clue each meeting for broker points."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.55,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "handshake_agent"
+                      ],
+        "notes":  {
+                      "winCondition":  "Earn enough accepted clue trades",
+                      "counterplay":  "Reject deals and hard-verify clues",
+                      "iconFile":  "WitnessBroker.png",
+                      "headerFile":  "WitnessBroker.png"
+                  }
+    },
+    {
+        "id":  "flux_nomad",
+        "displayName":  "Flux Nomad",
+        "team":  "Neutral",
+        "archetype":  "Movement",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_tick",
+                        "buttonLabel":  "Flux Nomad",
+                        "cooldownSeconds":  20,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "movement_progress",
+                            "summary":  "Gain progress for constant room-changing rhythms."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.55,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Maintain movement chain for total duration",
+                      "counterplay":  "Corner and pin movement routes",
+                      "iconFile":  "FluxNomad.png",
+                      "headerFile":  "FluxNomad.png"
+                  }
+    },
+    {
+        "id":  "scrap_baron",
+        "displayName":  "Scrap Baron",
+        "team":  "Neutral",
+        "archetype":  "Resource",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_interact",
+                        "buttonLabel":  "Scrap Baron",
+                        "cooldownSeconds":  25,
+                        "durationSeconds":  0,
+                        "charges":  8,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "resource_progress",
+                            "summary":  "Harvest scrap from task hubs and aftermath zones."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.55,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Bank enough scrap to trigger solo win",
+                      "counterplay":  "Deny access to hubs",
+                      "iconFile":  "ScrapBaron.png",
+                      "headerFile":  "ScrapBaron.png"
+                  }
+    },
+    {
+        "id":  "isolationist",
+        "displayName":  "Isolationist",
+        "team":  "Neutral",
+        "archetype":  "Survival",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_tick",
+                        "buttonLabel":  "Isolationist",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "player",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  2.25,
+                          "requireLineOfSight":  true,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "survival_progress",
+                            "summary":  "Accumulate points while no player is nearby."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.5,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Reach isolation timer threshold",
+                      "counterplay":  "Shadow and contest space",
+                      "iconFile":  "Isolationist.png",
+                      "headerFile":  "Isolationist.png"
+                  }
+    },
+    {
+        "id":  "threshold_seeker",
+        "displayName":  "Threshold Seeker",
+        "team":  "Neutral",
+        "archetype":  "Objective",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_on_room_enter",
+                        "buttonLabel":  "Threshold Seeker",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "objective_progress",
+                            "summary":  "Cross marked map thresholds in hidden order."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.45,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Complete full threshold sequence",
+                      "counterplay":  "Bodyguard chokepoints",
+                      "iconFile":  "ThresholdSeeker.png",
+                      "headerFile":  "ThresholdSeeker.png"
+                  }
+    },
+    {
+        "id":  "timeout_merchant",
+        "displayName":  "Timeout Merchant",
+        "team":  "Neutral",
+        "archetype":  "Meeting",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_meeting_start",
+                        "buttonLabel":  "Timeout Merchant",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  3,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "meeting",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "meeting_control",
+                            "summary":  "Spend charges to extend active discussion time."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.3,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+                          "protocol_arbiter"
+                      ],
+        "notes":  {
+                      "winCondition":  "Spend all extensions and survive",
+                      "counterplay":  "Vote merchant early",
+                      "iconFile":  "TimeoutMerchant.png",
+                      "headerFile":  "TimeoutMerchant.png"
+                  }
+    },
+    {
+        "id":  "relay_pilgrim",
+        "displayName":  "Relay Pilgrim",
+        "team":  "Neutral",
+        "archetype":  "Objective",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_console_use",
+                        "buttonLabel":  "Relay Pilgrim",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "sabotage",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "objective_progress",
+                            "summary":  "Activate each utility panel category at least once."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.45,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Complete relay checklist alive",
+                      "counterplay":  "Deny panel access",
+                      "iconFile":  "RelayPilgrim.png",
+                      "headerFile":  "RelayPilgrim.png"
+                  }
+    },
+    {
+        "id":  "cinder_tourist",
+        "displayName":  "Cinder Tourist",
+        "team":  "Neutral",
+        "archetype":  "Objective",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "on_sabotage_active_room_enter",
+                        "buttonLabel":  "Cinder Tourist",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "room",
+                          "targetTeam":  "any",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "objective_progress",
+                            "summary":  "Stand in each critical sabotage room during active alarms."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.45,
+                        "minPlayers":  9,
+                        "maxPerLobby":  1,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Complete room list and survive one meeting",
+                      "counterplay":  "Predict route and intercept",
+                      "iconFile":  "CinderTourist.png",
+                      "headerFile":  "CinderTourist.png"
+                  }
+    },
+    {
+        "id":  "quick_hands",
+        "displayName":  "Quick Hands",
+        "team":  "Any",
+        "archetype":  "Modifier",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_modifier",
+                        "buttonLabel":  "Quick Hands",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "self",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "stat_modifier",
+                            "summary":  "Use and task interactions complete faster."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.7,
+                        "minPlayers":  6,
+                        "maxPerLobby":  3,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Inherit base role win condition",
+                      "counterplay":  "Force movement instead of stationary tasks",
+                      "iconFile":  "QuickHands.png",
+                      "headerFile":  "QuickHands.png"
+                  }
+    },
+    {
+        "id":  "heavy_steps",
+        "displayName":  "Heavy Steps",
+        "team":  "Any",
+        "archetype":  "Modifier",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_modifier",
+                        "buttonLabel":  "Heavy Steps",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "self",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "stat_modifier",
+                            "summary":  "Leaves loud, visible foot pings while sprinting."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.7,
+                        "minPlayers":  6,
+                        "maxPerLobby":  3,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Inherit base role win condition",
+                      "counterplay":  "Track and collapse on pings",
+                      "iconFile":  "HeavySteps.png",
+                      "headerFile":  "HeavySteps.png"
+                  }
+    },
+    {
+        "id":  "cold_nerves",
+        "displayName":  "Cold Nerves",
+        "team":  "Any",
+        "archetype":  "Modifier",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_modifier",
+                        "buttonLabel":  "Cold Nerves",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "self",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "stat_modifier",
+                            "summary":  "Immune to panic visual effects but reports slower."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.7,
+                        "minPlayers":  6,
+                        "maxPerLobby":  3,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Inherit base role win condition",
+                      "counterplay":  "Exploit delayed reports",
+                      "iconFile":  "ColdNerves.png",
+                      "headerFile":  "ColdNerves.png"
+                  }
+    },
+    {
+        "id":  "overloaded",
+        "displayName":  "Overloaded",
+        "team":  "Any",
+        "archetype":  "Modifier",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_modifier",
+                        "buttonLabel":  "Overloaded",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "self",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "stat_modifier",
+                            "summary":  "Gain one extra ability charge with longer cooldowns."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.7,
+                        "minPlayers":  6,
+                        "maxPerLobby":  3,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Inherit base role win condition",
+                      "counterplay":  "Count charges and punish downtime",
+                      "iconFile":  "Overloaded.png",
+                      "headerFile":  "Overloaded.png"
+                  }
+    },
+    {
+        "id":  "lucky_break",
+        "displayName":  "Lucky Break",
+        "team":  "Any",
+        "archetype":  "Modifier",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_once",
+                        "buttonLabel":  "Lucky Break",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  1,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "self",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "stat_modifier",
+                            "summary":  "First lethal attempt against you fails."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.7,
+                        "minPlayers":  6,
+                        "maxPerLobby":  3,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Inherit base role win condition",
+                      "counterplay":  "Bait passive early",
+                      "iconFile":  "LuckyBreak.png",
+                      "headerFile":  "LuckyBreak.png"
+                  }
+    },
+    {
+        "id":  "glass_cannon",
+        "displayName":  "Glass Cannon",
+        "team":  "Any",
+        "archetype":  "Modifier",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_modifier",
+                        "buttonLabel":  "Glass Cannon",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "self",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "stat_modifier",
+                            "summary":  "Aggressive actions are stronger, but failed hostile actions self-stun."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.7,
+                        "minPlayers":  6,
+                        "maxPerLobby":  3,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Inherit base role win condition",
+                      "counterplay":  "Force risky action timings",
+                      "iconFile":  "GlassCannon.png",
+                      "headerFile":  "GlassCannon.png"
+                  }
+    },
+    {
+        "id":  "wide_lens",
+        "displayName":  "Wide Lens",
+        "team":  "Any",
+        "archetype":  "Modifier",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_modifier",
+                        "buttonLabel":  "Wide Lens",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "self",
+                          "targetTeam":  "self",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  true,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "stat_modifier",
+                            "summary":  "Higher vision radius but your outline is easier to spot."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.7,
+                        "minPlayers":  6,
+                        "maxPerLobby":  3,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Inherit base role win condition",
+                      "counterplay":  "Use distance spotting against target",
+                      "iconFile":  "WideLens.png",
+                      "headerFile":  "WideLens.png"
+                  }
+    },
+    {
+        "id":  "late_starter",
+        "displayName":  "Late Starter",
+        "team":  "Any",
+        "archetype":  "Modifier",
+        "origin":  "Stara Original",
+        "ability":  {
+                        "trigger":  "passive_round_gate",
+                        "buttonLabel":  "Late Starter",
+                        "cooldownSeconds":  0,
+                        "durationSeconds":  0,
+                        "charges":  99,
+                        "castTimeSeconds":  0
+                    },
+        "targeting":  {
+                          "scope":  "meeting",
+                          "targetTeam":  "self",
+                          "maxRangeMeters":  0,
+                          "requireLineOfSight":  false,
+                          "canTargetSelf":  false,
+                          "canTargetDead":  false
+                      },
+        "effects":  [
+                        {
+                            "type":  "stat_modifier",
+                            "summary":  "Role ability is locked in round one, then boosted after first meeting."
+                        }
+                    ],
+        "balance":  {
+                        "spawnWeight":  0.7,
+                        "minPlayers":  6,
+                        "maxPerLobby":  3,
+                        "enabledByDefault":  true
+                    },
+        "conflicts":  [
+
+                      ],
+        "notes":  {
+                      "winCondition":  "Inherit base role win condition",
+                      "counterplay":  "Apply round-one pressure",
+                      "iconFile":  "LateStarter.png",
+                      "headerFile":  "LateStarter.png"
+                  }
+    }
+]

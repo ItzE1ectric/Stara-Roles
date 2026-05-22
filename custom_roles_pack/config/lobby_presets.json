@@ -1,28 +1,246 @@
-{
-  "schemaVersion": "1.0",
-  "lastUpdated": "2026-05-22",
-  "presets": {
-    "balanced_10p": {
-      "recommendedPlayers": 10,
-      "impostors": 2,
-      "discussionSeconds": 45,
-      "votingSeconds": 90,
-      "roles": {
-        "crew": ["archivist", "warden", "signaler"],
-        "impostor": ["saboteur_plus", "mimic"],
-        "neutral": ["broker"]
-      }
-    },
-    "chaos_12p": {
-      "recommendedPlayers": 12,
-      "impostors": 3,
-      "discussionSeconds": 30,
-      "votingSeconds": 75,
-      "roles": {
-        "crew": ["archivist", "oracle", "warden"],
-        "impostor": ["dissolver", "parasite"],
-        "neutral": ["fugitive"]
-      }
-    }
-  }
+﻿{
+    "schemaVersion":  "2.0",
+    "lastUpdated":  "2026-05-22",
+    "presets":  {
+                    "stara_ranked_10p":  {
+                                             "recommendedPlayers":  10,
+                                             "impostors":  2,
+                                             "discussionSeconds":  45,
+                                             "votingSeconds":  90,
+                                             "maxCrewmateRoles":  3,
+                                             "maxImpostorRoles":  2,
+                                             "maxNeutralRoles":  1,
+                                             "rolePools":  {
+                                                               "crewmate":  [
+                                                                                "pulse_mapper",
+                                                                                "echo_clerk",
+                                                                                "route_auditor",
+                                                                                "residue_analyst",
+                                                                                "static_scout",
+                                                                                "vector_witness",
+                                                                                "gatewright",
+                                                                                "patchrunner",
+                                                                                "signal_mason",
+                                                                                "coolant_marshal",
+                                                                                "drift_guard",
+                                                                                "sync_pilot",
+                                                                                "task_curator",
+                                                                                "burst_anchor",
+                                                                                "chain_custodian",
+                                                                                "protocol_arbiter",
+                                                                                "coil_runner",
+                                                                                "handshake_agent",
+                                                                                "vault_keeper",
+                                                                                "lumen_keeper"
+                                                                            ],
+                                                               "impostor":  [
+                                                                                "null_weaver",
+                                                                                "veil_driver",
+                                                                                "delay_artist",
+                                                                                "ghostwire",
+                                                                                "fracturer",
+                                                                                "relay_hijacker",
+                                                                                "grid_leech",
+                                                                                "pulse_spoofer",
+                                                                                "drift_stalker",
+                                                                                "decoy_smith",
+                                                                                "echo_thief",
+                                                                                "route_jammer",
+                                                                                "airlock_spider",
+                                                                                "cooldown_broker",
+                                                                                "fuse_eater",
+                                                                                "vision_gouger",
+                                                                                "exit_snarer",
+                                                                                "clone_smuggler",
+                                                                                "panic_sculptor",
+                                                                                "task_corruptor"
+                                                                            ],
+                                                               "neutral":  [
+                                                                               "debtkeeper",
+                                                                               "cartographer_exile",
+                                                                               "last_passenger",
+                                                                               "quiet_gambler",
+                                                                               "witness_broker",
+                                                                               "flux_nomad",
+                                                                               "scrap_baron",
+                                                                               "isolationist",
+                                                                               "threshold_seeker",
+                                                                               "timeout_merchant",
+                                                                               "relay_pilgrim",
+                                                                               "cinder_tourist"
+                                                                           ],
+                                                               "modifiers":  [
+                                                                                 "quick_hands",
+                                                                                 "heavy_steps",
+                                                                                 "cold_nerves",
+                                                                                 "overloaded",
+                                                                                 "lucky_break",
+                                                                                 "glass_cannon",
+                                                                                 "wide_lens",
+                                                                                 "late_starter"
+                                                                             ]
+                                                           },
+                                             "notes":  "Balanced information density. Good default for early playtests."
+                                         },
+                    "stara_tactical_12p":  {
+                                               "recommendedPlayers":  12,
+                                               "impostors":  2,
+                                               "discussionSeconds":  55,
+                                               "votingSeconds":  100,
+                                               "maxCrewmateRoles":  4,
+                                               "maxImpostorRoles":  2,
+                                               "maxNeutralRoles":  1,
+                                               "rolePools":  {
+                                                                 "crewmate":  [
+                                                                                  "pulse_mapper",
+                                                                                  "echo_clerk",
+                                                                                  "route_auditor",
+                                                                                  "residue_analyst",
+                                                                                  "static_scout",
+                                                                                  "vector_witness",
+                                                                                  "gatewright",
+                                                                                  "patchrunner",
+                                                                                  "signal_mason",
+                                                                                  "coolant_marshal",
+                                                                                  "drift_guard",
+                                                                                  "sync_pilot",
+                                                                                  "task_curator",
+                                                                                  "burst_anchor",
+                                                                                  "chain_custodian",
+                                                                                  "protocol_arbiter",
+                                                                                  "coil_runner",
+                                                                                  "handshake_agent",
+                                                                                  "vault_keeper",
+                                                                                  "lumen_keeper"
+                                                                              ],
+                                                                 "impostor":  [
+                                                                                  "null_weaver",
+                                                                                  "veil_driver",
+                                                                                  "delay_artist",
+                                                                                  "ghostwire",
+                                                                                  "fracturer",
+                                                                                  "relay_hijacker",
+                                                                                  "grid_leech",
+                                                                                  "pulse_spoofer",
+                                                                                  "drift_stalker",
+                                                                                  "decoy_smith",
+                                                                                  "echo_thief",
+                                                                                  "route_jammer",
+                                                                                  "airlock_spider",
+                                                                                  "cooldown_broker",
+                                                                                  "fuse_eater",
+                                                                                  "vision_gouger",
+                                                                                  "exit_snarer",
+                                                                                  "clone_smuggler",
+                                                                                  "panic_sculptor",
+                                                                                  "task_corruptor"
+                                                                              ],
+                                                                 "neutral":  [
+                                                                                 "debtkeeper",
+                                                                                 "cartographer_exile",
+                                                                                 "last_passenger",
+                                                                                 "quiet_gambler",
+                                                                                 "witness_broker",
+                                                                                 "flux_nomad",
+                                                                                 "scrap_baron",
+                                                                                 "isolationist",
+                                                                                 "threshold_seeker",
+                                                                                 "timeout_merchant",
+                                                                                 "relay_pilgrim",
+                                                                                 "cinder_tourist"
+                                                                             ],
+                                                                 "modifiers":  [
+                                                                                   "quick_hands",
+                                                                                   "heavy_steps",
+                                                                                   "cold_nerves",
+                                                                                   "overloaded",
+                                                                                   "lucky_break",
+                                                                                   "glass_cannon",
+                                                                                   "wide_lens",
+                                                                                   "late_starter"
+                                                                               ]
+                                                             },
+                                               "notes":  "Longer meetings, stronger social deduction, lower chaos."
+                                           },
+                    "stara_chaos_15p":  {
+                                            "recommendedPlayers":  15,
+                                            "impostors":  3,
+                                            "discussionSeconds":  35,
+                                            "votingSeconds":  80,
+                                            "maxCrewmateRoles":  5,
+                                            "maxImpostorRoles":  3,
+                                            "maxNeutralRoles":  2,
+                                            "rolePools":  {
+                                                              "crewmate":  [
+                                                                               "pulse_mapper",
+                                                                               "echo_clerk",
+                                                                               "route_auditor",
+                                                                               "residue_analyst",
+                                                                               "static_scout",
+                                                                               "vector_witness",
+                                                                               "gatewright",
+                                                                               "patchrunner",
+                                                                               "signal_mason",
+                                                                               "coolant_marshal",
+                                                                               "drift_guard",
+                                                                               "sync_pilot",
+                                                                               "task_curator",
+                                                                               "burst_anchor",
+                                                                               "chain_custodian",
+                                                                               "protocol_arbiter",
+                                                                               "coil_runner",
+                                                                               "handshake_agent",
+                                                                               "vault_keeper",
+                                                                               "lumen_keeper"
+                                                                           ],
+                                                              "impostor":  [
+                                                                               "null_weaver",
+                                                                               "veil_driver",
+                                                                               "delay_artist",
+                                                                               "ghostwire",
+                                                                               "fracturer",
+                                                                               "relay_hijacker",
+                                                                               "grid_leech",
+                                                                               "pulse_spoofer",
+                                                                               "drift_stalker",
+                                                                               "decoy_smith",
+                                                                               "echo_thief",
+                                                                               "route_jammer",
+                                                                               "airlock_spider",
+                                                                               "cooldown_broker",
+                                                                               "fuse_eater",
+                                                                               "vision_gouger",
+                                                                               "exit_snarer",
+                                                                               "clone_smuggler",
+                                                                               "panic_sculptor",
+                                                                               "task_corruptor"
+                                                                           ],
+                                                              "neutral":  [
+                                                                              "debtkeeper",
+                                                                              "cartographer_exile",
+                                                                              "last_passenger",
+                                                                              "quiet_gambler",
+                                                                              "witness_broker",
+                                                                              "flux_nomad",
+                                                                              "scrap_baron",
+                                                                              "isolationist",
+                                                                              "threshold_seeker",
+                                                                              "timeout_merchant",
+                                                                              "relay_pilgrim",
+                                                                              "cinder_tourist"
+                                                                          ],
+                                                              "modifiers":  [
+                                                                                "quick_hands",
+                                                                                "heavy_steps",
+                                                                                "cold_nerves",
+                                                                                "overloaded",
+                                                                                "lucky_break",
+                                                                                "glass_cannon",
+                                                                                "wide_lens",
+                                                                                "late_starter"
+                                                                            ]
+                                                          },
+                                            "notes":  "High role density and higher misinformation pressure."
+                                        }
+                }
 }
