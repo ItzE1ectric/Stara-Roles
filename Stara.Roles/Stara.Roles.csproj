@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DebugType>embedded</DebugType>
+    <AssemblyName>Stara.Roles</AssemblyName>
+    <RootNamespace>Stara.Roles</RootNamespace>
+    <Version>1.0.0</Version>
+    <Description>Stara original custom roles for Among Us (MiraAPI)</Description>
+    <Authors>ItzE1ectric</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AllOfUs.MiraAPI" Version="0.4.0" />
+    <PackageReference Include="Reactor" Version="2.5.0-ci.371" />
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.735" Private="false" ExcludeAssets="runtime;native" />
+    <PackageReference Include="AmongUs.GameLibs.Steam" Version="2026.3.31" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="2.1.0-rc.1" PrivateAssets="all" ExcludeAssets="runtime" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\**\*.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="StaraRolesPlugin.cs" />
+    <Compile Include="Roles\CheaterRoleMinimal.cs" />
+    <Compile Include="Roles\CheaterAbility.cs" />
+  </ItemGroup>
+
+  <Target Name="CopyToAmongUs" AfterTargets="Build" Condition="'$(AmongUs)' != ''">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(AmongUs)\BepInEx\plugins\" UseSymboliclinksIfPossible="true" />
+  </Target>
+</Project>

@@ -1,6 +1,15 @@
-﻿# Stara Roles
+# Stara Roles
 
 Custom Among Us role planning and content pipeline.
+
+## DLL Mod (Now Included)
+- `Stara.Roles/Stara.Roles.csproj` - real BepInEx + MiraAPI role plugin project.
+- `Stara.Roles/Roles/CheaterRoleMinimal.cs` - Cheater custom role definition.
+- `Stara.Roles/Roles/CheaterAbility.cs` - Cheater teleport/kill/hide/return ability logic.
+- `Stara.Roles/Resources/AbilityButton.png` - in-game ability button icon.
+- `Stara.Roles/BUILD_AND_INSTALL.md` - install/build instructions.
+- `DLL_RESEARCH_AND_PLAN.md` - research notes + implementation plan.
+- `DUMP_HOOK_MAP.md` - method-level hook map from your `dump.cs`.
 
 ## Current contents
 - `AMONG_US_CUSTOM_ROLES_ICON_PLAN.md` - research-backed planning document.
@@ -11,8 +20,7 @@ Custom Among Us role planning and content pipeline.
 - `custom_roles_pack/config/*.json` - spawn, cooldown, and lobby preset templates.
 - `custom_roles_pack/docs/*` - compatibility and legal/disclaimer docs.
 
-## Next build steps
-1. Draw role icons into `custom_roles_pack/assets/icons` (`288x288` PNG).
-2. Draw role headers into `custom_roles_pack/assets/role_headers` (`500x200` PNG).
-3. Wire CSV + JSON fields to your runtime config loader.
-4. Run private playtests and tune with `design/balance_notes.md`.
+## Current runtime scope
+1. Only one custom role is compiled and loaded: `Cheater`.
+2. Cheater ability: teleport to a random alive player, hidden-body kill, then return after 5 seconds.
+3. Plugin target: BepInEx IL2CPP + Reactor + MiraAPI.
