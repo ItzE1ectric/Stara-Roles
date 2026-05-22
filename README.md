@@ -4,7 +4,10 @@ Custom Among Us role planning and content pipeline.
 
 ## Current contents
 - `AMONG_US_CUSTOM_ROLES_ICON_PLAN.md` - research-backed planning document.
-- `custom_roles_pack/design/roles.csv` - editable role table for implementation.
+- `custom_roles_pack/design/roles.csv` - merged all-custom-roles list for implementation.
+- `custom_roles_pack/design/all_custom_roles_catalog.csv` - source-by-source full catalog.
+- `custom_roles_pack/design/all_custom_roles_merged.csv` - deduped merged list across mods.
+- `custom_roles_pack/design/ALL_CUSTOM_ROLES_INDEX.md` - quick index and source revision snapshot.
 - `custom_roles_pack/config/*.json` - spawn, cooldown, and lobby preset templates.
 - `custom_roles_pack/docs/*` - compatibility and legal/disclaimer docs.
 

@@ -1,0 +1,15 @@
+﻿Generated: 2026-05-22 06:42:48 -05:00
+Total catalog rows (including modifiers/subroles/modes): 634
+Total merged unique roles (excluding modifiers): 452
+Counts by source:
+- BoundlessHostRoles: 408
+- TheOtherRoles: 59
+- TOU-Mira: 81
+- TOU-R: 86
+Counts by role_kind:
+- custom_role: 479
+- gamemode_role: 25
+- ghost_role: 4
+- modifier: 36
+- sub_role: 81
+- vanilla_remake: 9
